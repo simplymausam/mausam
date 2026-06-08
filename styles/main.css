@@ -135,22 +135,33 @@ section {
 
 /*---header---*/
 
+/*---header---*/
+
 header {
 
-    width: 100%;
+    padding:
+        var(--space-lg)
+        var(--space-md);
 
-    background: var(--site-white);
-    color: var(--site-black);
+}
 
-    padding: var(--space-md) var(--space-sm);
+header a {
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    font-family: var(--bold-font);
 
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+    font-size:
+        clamp(
+            3rem,
+            10vw,
+            8rem
+        );
+
+    line-height: 0.9;
+
+    letter-spacing: -0.08em;
+
+    text-transform: lowercase;
+
 }
 
 /*---main---*/
@@ -170,6 +181,68 @@ main {
     align-items: center;
 
     position: relative;
+
+    gap: var(--space-xl);
+
+}
+
+/*---blocks---*/
+
+.block {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: var(--space-sm);
+
+}
+
+.block h2 {
+
+    font-size:
+        clamp(
+            2rem,
+            5vw,
+            4rem
+        );
+
+    letter-spacing: -0.04em;
+
+}
+
+.block img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    transition:
+        transform
+        var(--transition-duration);
+
+}
+
+.block:hover img {
+
+    transform: scale(1.01);
+
+}
+
+.block:nth-child(odd) {
+
+    width: 60%;
+
+}
+
+.block:nth-child(even) {
+
+    width: 80%;
+
+    margin-left: auto;
+
 }
 
 /*---footer---*/

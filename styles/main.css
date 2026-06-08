@@ -179,6 +179,12 @@ footer {
 
 header {
 
+    position: relative;
+
+    z-index: 2;
+
+    background: var(--site-white);
+    color: var(--site-black);
     padding:
         var(--space-lg)
         var(--space-md);

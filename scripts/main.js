@@ -1,12 +1,12 @@
 const words = [
-    "archive",
-    "project",
-    "design",
-    "image",
-    "rain",
-    "memory",
-    "sound",
-    "rain",
+    "[archive]",
+    "<project>",
+    "-design-",
+    "{image}",
+    "/rain/",
+    "<memory*>",
+    "~!sound!~",
+    "signal--",
     "cloud",
     "memory",
     "sound",
@@ -56,7 +56,7 @@ document.addEventListener("mousemove", (event) => {
                 event.clientY - y
             );
 
-        if (distance < 10) {
+        if (distance < 100) {
 
             span.style.color = "#052576";
 

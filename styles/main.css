@@ -133,6 +133,26 @@ section {
     padding: 0;
 }
 
+/*---header---*/
+
+header {
+
+    width: 100%;
+
+    background: var(--site-white);
+    color: var(--site-black);
+
+    padding: var(--space-md) var(--space-sm);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 /*---main---*/
 
 main {

@@ -1,0 +1,211 @@
+/*---root---*/
+:root {
+    
+    /*color*/
+
+    --site-white: #ececec;
+    --site-black: #1c1c1c;
+    --site-main: #052576;
+
+    /*typography*/
+
+    --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --bold-font:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --font-sm: 0.5rem;
+    --font-md: 1rem;
+    --font-lg: 3rem;
+
+    /*spacing*/
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+    --space-xl: 4rem;
+
+    /*animation*/
+
+    --transition-duration: 0.3s;
+}
+
+/*---reset---*/
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+img,
+video {
+
+    width: 100%;
+
+    display: block;
+}
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+ul,
+ol {
+
+    list-style: none;
+}
+
+button {
+
+    border: none;
+
+    background: none;
+
+    font: inherit;
+
+    cursor: pointer;
+}
+
+input,
+textarea,
+select {
+
+    font: inherit;
+
+    border: none;
+
+    outline: none;
+
+    background: none;
+}
+
+/*---global---*/
+
+body {
+
+    background: var(--site-white);
+    color: var(--site-black);
+
+    font-family: var(--main-font);
+
+    overflow-x: hidden;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+::selection {
+
+    background: var(--site-main);
+
+    color: var(--site-white);
+}
+
+html {
+
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: var(--bold-font);
+
+    line-height: 0.9;
+}
+
+p {
+
+    line-height: 1.5;
+}
+
+section {
+
+    padding: 0;
+}
+
+/*---main---*/
+
+main {
+
+    flex: 1;
+
+    display: grid;
+
+    grid-template-rows: auto 1fr auto;
+
+    gap: var(--space-lg);
+
+    padding: var(--space-lg) var(--space-md);
+
+    align-items: center;
+
+    position: relative;
+}
+
+/*---footer---*/
+
+footer {
+    
+    width: 100%;
+
+    background: var(--site-white);
+    color: var(--site-black);
+
+    padding: var(--space-md) var(--space-sm);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: var(--space-sm);
+}
+
+.footer-top {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap:var(--space-md);
+
+    font-size: var(--font-md);
+
+    opacity: 0.7;
+}
+
+
+.footer-bottom {
+
+    display: flex;
+
+    gap: var(--space-md);
+}
+
+.footer-bottom img {
+
+    width: 20px;
+
+    opacity: 0.7;
+
+    transition:
+        opacity var(--transition-duration),
+        transform var(--transition-duration);
+}
+
+.footer-bottom img:hover {
+
+    opacity: 1;
+
+    transform: translateY(-2px);
+}

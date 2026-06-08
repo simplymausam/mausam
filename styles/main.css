@@ -133,7 +133,47 @@ section {
     padding: 0;
 }
 
-/*---header---*/
+/*---background---*/
+
+#text-background {
+
+    position: fixed;
+
+    inset: 0;
+
+    overflow: hidden;
+
+    z-index: 0;
+
+    pointer-events: none;
+
+    padding: 1rem;
+
+    line-height: 1.8;
+
+    font-size: 1rem;
+
+    color: rgba(28, 28, 28, 0.05);
+
+}
+
+#text-background span {
+
+    display: inline-block;
+
+    margin-right: 0.5rem;
+
+}
+
+header,
+main,
+footer {
+
+    position: relative;
+
+    z-index: 1;
+
+}
 
 /*---header---*/
 
